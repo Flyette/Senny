@@ -6,5 +6,6 @@ return [
 		"password"=>"root",
 		"dbname"=>"crm",
 		"host"=>"localhost"
-	]
+	],
+	"url"=>"http://senny.dev/index.php?"
 ];

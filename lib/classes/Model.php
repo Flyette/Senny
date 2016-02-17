@@ -15,5 +15,6 @@ class Model {
 		ORM::configure('username', $this->config["db"]["username"]);
 		ORM::configure('password', $this->config["db"]["password"]);
 		ORM::configure('error_mode', PDO::ERRMODE_WARNING);
+		ORM::configure('return_result_sets', true);
 	}
 }
