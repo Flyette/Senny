@@ -1,0 +1,6 @@
+{
+    "require": {
+        "j4mie/idiorm": "^1.5",
+        "league/plates": "^3.1"
+    }
+}
