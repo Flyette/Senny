@@ -14,6 +14,8 @@ $u = $user->get($_GET['id']);
 	<?= Helper::field('code_postal', $u->code_postal, 'Code Postal'); ?>
 	<?= Helper::field('ville', $u->ville); ?>
 	<?= Helper::field('site', $u->site); ?>
+	<?= Helper::field('entreprise', $u->entreprise); ?>
+	<?= Helper::field('mail', $u->mail); ?>
 	<div>
 		<button class="ui blue button">Modifier</button>
 	</div>

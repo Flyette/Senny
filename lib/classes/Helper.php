@@ -7,7 +7,7 @@ class Helper {
 	}
 
 	public static function url($page, $id=false, $action=false){
-		//http://senny.dev/?page=users-show&id=1
+		//http://senny.dev/?page=users-show&id=1&action=archive
 		$page = str_replace("/", "-", $page);
 		$domain = config()['url'];
 		$url = $domain . "page=" . $page;

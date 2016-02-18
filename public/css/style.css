@@ -8,3 +8,6 @@ table tr td > a {
 	margin: -0.714286em;
 	text-align: inherit;
 }
+table tr td > a.ui.red.button {
+	margin:0 auto;
+}

@@ -11,6 +11,8 @@ $this->layout('template', ['title' => 'Add user']);
 	<?= Helper::field('code_postal', null, 'Code Postal'); ?>
 	<?= Helper::field('ville', null); ?>
 	<?= Helper::field('site', null); ?>
+	<?= Helper::field('entreprise', null); ?>
+	<?= Helper::field('mail', null, 'Mail', 'mail'); ?>
 	<div>
 		<button class="ui blue button">Ajouter</button>
 	</div>

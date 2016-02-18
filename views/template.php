@@ -3,8 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title><?=$this->e($title)?></title>
-	<link rel="stylesheet" type="text/css" href="/css/semantic.css">
-	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/semantic.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
 
 </head>
 <body>
@@ -16,7 +16,7 @@
 	<div class="ui container">
 	<?=$this->section("content")?>
 	</div>
-<script type="text/javascript" src="/js/jquery.js"></script>	
-<script type="text/javascript" src="/js/app.js"></script>	
+<script type="text/javascript" src="./js/jquery.js"></script>	
+<script type="text/javascript" src="./js/app.js"></script>	
 </body>
 </html>

@@ -27,14 +27,17 @@ foreach ($messages as $msg) : ?>
 
 <?php endforeach; ?>
 </br>
-<form action="<?= Helper::url('users/show', $u->id, 'createMsg'); ?>" class="ui form" method="post">
+<form action="<?= Helper::url('users/showArchive', $u->id, 'createMsg'); ?>" class="ui form" method="post">
 	<input type="hidden" name="user_id" value="<?= $u->id ?>">
 	<textarea name="content" id=""></textarea><br><br>
 	<button class="ui blue button">Ajouter message</button>
 </form>
 
+
 <div class="ui menu">
 	<a href="<?= url('users/edit', $u->id) ?>" class="item">Editer</a>
-	<a href="<?= url('users/archive', $u->id, 'archive') ?>" class="item">Archiver</a>
+	<div class="aligned center">
+	<a href="<?= url('users/archive', $u->id, 'desarchive') ?>" class="item">Desarchiver</a>
+	</div>
 	<a href="<?= url('users/index', $u->id, 'deleteUser') ?>" class="item">Supprimer</a>
 </div>

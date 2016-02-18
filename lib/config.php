@@ -3,9 +3,9 @@
 return [
 	"db"=>[
 		"username"=>"root",
-		"password"=>"root",
+		"password"=>"toor",
 		"dbname"=>"crm",
 		"host"=>"localhost"
 	],
-	"url"=>"http://senny.dev/index.php?"
+	"url"=>"http://hayate.dev/Senny/public/index.php?"
 ];

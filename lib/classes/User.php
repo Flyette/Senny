@@ -16,10 +16,5 @@ class User extends Model{
 		$u->set($data);
 		$u->save();
 	}
-	public function edit(){
 
-	}
-	public function remove($id){
-
-	}
 }
