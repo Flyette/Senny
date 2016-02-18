@@ -26,7 +26,7 @@ class Handler {
 		$user->archive = 0;
 		$user->save();
 	}
-	public function createMsg($data){
+	public function createMsg(){
 		$msg = new Message;
 		$message = $msg->addMsg($_POST);
 	}

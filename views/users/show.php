@@ -23,7 +23,7 @@ $messages = $message->getAllMsgs($_GET['id']);
 
 foreach ($messages as $msg) : ?>
 
-<p class="ui segment attached"><?= $msg->content ?></p>
+<p class="ui segment attached"><span class="datetime"><?= Helper::humanDate($msg->created_at) ?></span><br><?= $msg->content ?></p>
 
 <?php endforeach; ?>
 </br>

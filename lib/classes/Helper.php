@@ -1,4 +1,6 @@
 <?php
+require BASE . "vendor/autoload.php";
+use Carbon\Carbon;
 
 class Helper {
 
@@ -29,6 +31,11 @@ class Helper {
 					<label for="'. $id .'">' . $label . '</label>
 					<input type="' . $type . '" name="'. $name .'" id="'. $id .'" value="' . $value . '">
 				</div>';
+	}
+	public static function humanDate($date){
+		$dt = new Carbon($date);
+		$date = $dt->formatLocalized('%A %d %h %Y, à %k:%M'); 
+		return ucfirst($date);
 	}
 }
 
